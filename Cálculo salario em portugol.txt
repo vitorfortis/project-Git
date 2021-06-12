@@ -1,0 +1,25 @@
+programa {
+	    
+	
+	
+	funcao inicio() {
+	    
+	 real horatrab, horaxtra, valorhora, salariobru, inss, fgts, salarioliq = 0.0
+	  
+	 inteiro phoraextra = 100
+	  escreva("Informe o numero de horas trabalhadas:")
+	  leia(horatrab)
+	  escreva("Informe o numero de horas extras:")
+	  leia(horaxtra)
+	  escreva("informe o valor da hora:")
+      leia(valorhora)
+      salariobru = (horatrab + horaxtra * (1+(phoraextra /100))) * valorhora
+      inss = salariobru * 0.09
+      fgts = salariobru * 0.08
+      salarioliq = (salariobru - inss)
+      escreva("O salário bruto é:", salariobru)
+      escreva("O salário liquido é:",salarioliq)
+      escreva("O INSS é: ", inss)
+      escreva("O FGTS é: ", fgts)
+	}
+}
